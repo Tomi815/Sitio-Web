@@ -1,0 +1,6 @@
+  @mixin tipografiaBase($fuente, $tamanio, $color, $line) {
+    font-family: $fuente ;
+    font-size: $tamanio ;
+    color: $color;
+    line-height: $line ;
+  }

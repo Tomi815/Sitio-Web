@@ -1,0 +1,27 @@
+$roboto:'Roboto', sans-serif;
+$lobster:'Lobster', 'cursive';
+
+  /* Estilo para texto */
+h1{
+    color: #ff7008;
+    text-align: justify;
+    font-family: $lobster
+}
+  
+h2{
+    color: #ff7008;
+    text-align: justify;
+    font-family: $lobster 
+}
+
+p{
+    color: black;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    text-align: center;  
+}

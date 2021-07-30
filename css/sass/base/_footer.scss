@@ -1,0 +1,8 @@
+footer{
+  @include tipografiaBase($roboto, 20px, #000, 10px);
+    background-color: #ffbe30;
+    font-family: $roboto;
+  }
+  h2{
+    font-size: 35px;
+  }
