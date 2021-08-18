@@ -22,14 +22,15 @@
         content="PIZZA, DELIVERY, PIZZERIA, COMIDA, LOS CUÑADOS, SABORES ORIGINALES, PIZZA A LA PIEDRA, HORNO A LEÑA">
 
     <!-- flavicons -->
-    <link rel="shortcut icon" href="../img/logo/icono-pag.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo/flaticon.svg" type="image/x-icon">
 
     <!-- googleFonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <!-- estilosCss -->
     <link rel="stylesheet" href="../css/normalize.min.css">
@@ -37,8 +38,9 @@
 </head>
 
 <body>
+    <!-- NavBar -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar modNav navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a title="logo-principal" href="../index.html"><img class="logo" src="../img/logo/logo-principal.png"
                         alt="logo-principal"></a>
@@ -49,60 +51,73 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="../index.html">Inicio</a>
                         <a class="nav-link" href="menu.html">Menu</a>
                         <a class="nav-link" href="nuestrahistoria.html">Nuestra Historia</a>
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div>
-        <h1 class="centrar tracking-in-expand">Contacto Los Cuñados</h1>
-    </div>
-    <form action="#" method="POST" enctype="text/plain">
+    <!-- Formulario -->
+    <main>
         <div>
-            <label for="nombre">Nombre y Apellido </label>
-            <input type="text" name="nombre">
+            <h1 class="centrar tracking-in-expand">Contacto Los Cuñados</h1>
         </div>
-        <div>
-            <label for="e-mail">Correo electrónico</label>
-            <input type="email" name="e-mail">
-        </div>
-        <div>
-            <label for="asunto">Asunto</label>
-            <input type="text" name="asunto">
-        </div>
-        <div>
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" placeholder="Escriba aqui su Mensaje"></textarea>
-        </div>
-        <input type="submit" value="ENVIAR" id="botonForm">
-    </form>
+        <form action="#" method="POST" enctype="text/plain">
+            <div>
+                <label for="nombre">Nombre y Apellido </label>
+                <input type="text" name="nombre" placeholder="Nombre y Apellido">
+            </div>
+            <div>
+                <label for="e-mail">Correo electrónico</label>
+                <input type="email" name="e-mail" placeholder="Correo electrónico">
+            </div>
+            <div>
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" placeholder="Asunto">
+            </div>
+            <div>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" placeholder="Escriba aqui su Mensaje"></textarea>
+            </div>
+            <input type="submit" value="ENVIAR" class="botonForm">
+            <input type="reset" value="LIMPIAR FORMULARIO" class="botonForm">
+        </form>
+    </main>
 
+    <!-- Pie de Pagina -->
     <footer>
-        <h2>¡Hace tu Pedido!</h2>
-        <div>
-            <p>E-mail:loscuñados@gmail.com</p>
-            <p>Tel:11-4273-5468 </p>
-        </div>
-
-        <div>
-            <a title="Facebook" href="https://www.facebook.com" target="blank"><img src="../img/imagenes/facebook.png"
-                    alt="Facebook" width="50"></a>
-            <a title="Instagram" href="https://www.instagram.com" target="blank"><img
-                    src="../img/imagenes/instagram.png" alt="Instagram" width="50"></a>
-        </div>
-
-        <div class="centrar">
-            <p>©2021 Los Cuñados | Todos los derechos reservados |</p>
+        <div class="margen">
+            <h2>¡Hace tu Pedido!</h2>
+            <div>
+                <h3>Informacion de Contacto</h3>
+                <div class="redes"><img src="../img/iconos/gmail.svg" alt="e-mail" width="40">
+                    &nbsp &nbsp<p>loscuñados@gmail.com</p>
+                </div>
+                <div class="redes"><img src="../img/iconos/whap.svg" alt="numero-telefono" width="40">
+                    &nbsp &nbsp<p>11-4273-5468</p>
+                </div>
+            </div>
+            <h3>Nuestras Redes</h3>
+            <div>
+                <a title="facebook" href="https://www.facebook.com" target="blank"><img src="../img/iconos/fb.svg"
+                        alt="facebook" width="50"></a>
+                <a title="instagram" href="https://www.instagram.com" target="blank"><img src="../img/iconos/ig.svg"
+                        alt="instagram" width="50"></a>
+            </div>
+            <div class="centrar">
+                <p>©2021 Los Cuñados | Todos los derechos reservados |</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts Bootstrap -->
-    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 
 </body>
 

@@ -7,16 +7,19 @@
 @import "base/imagenes";
 @import "base/form";
 
+/***** Estilos Generales *****/
 html {
-    font-size: 16px
+  font-size: 16px
 }
 
 body{
-    background-color: $color4;
-    nav{
-        background-color: $color2;
-    }
-  }
+  background-color: $color4;
+}
+
+.modNav{
+   @include tipografiaBase($lobster, 28px, #000, none);
+  background-color: $color2;
+}
 
 /***** Media Queries *****/
   @media screen and (min-width: 768px){

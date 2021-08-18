@@ -1,7 +1,7 @@
-footer{
-  @include tipografiaBase($roboto, 20px, #000, 0px);
+ /* Estilos Footer */
+ footer{
+  @include tipografiaBase($roboto, 20px, #000, none);
     background-color: #ffbe30;
-    font-family: $roboto;
   h2{
     font-size: 45px;
   }
@@ -20,7 +20,7 @@ footer{
   display: flex; flex-direction: row;
   margin-top: 10px;
   margin-bottom: 10px;
-  align-items:center
+  align-items:center;
 }
 .margen{
   margin-left: 20px;

@@ -1,4 +1,4 @@
-/* Estilo para texto */
+/* Estilo para elementos de texto */
 h1 {
   color: #ff7008;
   text-align: justify;
@@ -32,6 +32,7 @@ p {
 /* Animaciones y Transiciones */
 .tracking-in-expand {
   animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  transition-duration: 0.4s;
 }
 
 .contenedor:hover .zoom {
@@ -58,13 +59,13 @@ p {
   }
 }
 
+/* Estilos Footer */
 footer {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   color: #000;
-  line-height: 0px;
+  line-height: none;
   background-color: #ffbe30;
-  font-family: "Roboto", sans-serif;
 }
 
 footer h2 {
@@ -170,7 +171,7 @@ article {
   margin: 5%;
 }
 
-/* Estilo Imagenes */
+/* Estilo para Imagenes */
 .imagenes {
   width: 275px;
   height: 275px;
@@ -199,6 +200,7 @@ form {
   padding: 10px 20px;
   box-sizing: border-box;
   margin-top: 20px;
+  margin-bottom: 50px;
   border-radius: 7px;
 }
 
@@ -223,16 +225,18 @@ form label {
   margin-bottom: 10px;
 }
 
-#botonForm {
+.botonForm {
   background-color: #ffe108;
-  color: #000;
   padding: 20px;
+  transition-duration: 0.4s;
 }
 
-#botonForm :hover {
-  cursor: pointer;
+.botonForm:hover {
+  background-color: #4CAF50;
+  color: white;
 }
 
+/***** Estilos Generales *****/
 html {
   font-size: 16px;
 }
@@ -241,7 +245,11 @@ body {
   background-color: #fffb52;
 }
 
-body nav {
+.modNav {
+  font-family: "Lobster", "cursive";
+  font-size: 28px;
+  color: #000;
+  line-height: none;
   background-color: #ffa908;
 }
 
