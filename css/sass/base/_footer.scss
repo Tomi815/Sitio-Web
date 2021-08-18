@@ -1,8 +1,27 @@
 footer{
-  @include tipografiaBase($roboto, 20px, #000, 10px);
+  @include tipografiaBase($roboto, 20px, #000, 0px);
     background-color: #ffbe30;
     font-family: $roboto;
-  }
   h2{
-    font-size: 35px;
+    font-size: 45px;
   }
+  h3{
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  p{
+    text-align: justify;
+    line-height:normal;
+    letter-spacing: 2px;
+  }
+}
+.redes{
+  display: flex; flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items:center
+}
+.margen{
+  margin-left: 20px;
+}
