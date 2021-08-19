@@ -30,12 +30,28 @@ form{
   }
 }
 
+.infoContacto{
+  width: 600px;
+  margin: auto;
+  background-color: $color2;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 7px;
+  h3{
+    font-size: 30px;
+    color: black;
+  }
+}
+
 // Estilo para los Botones
 .botonForm {
   background-color: $color3;
   padding: 20px;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
+  border-radius: 5px;
 }
 
 .botonForm:hover {

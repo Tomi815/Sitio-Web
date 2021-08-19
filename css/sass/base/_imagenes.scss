@@ -1,17 +1,74 @@
 /* Estilo para Imagenes */
 .imagenes{
-    width: 275px;
-    height: 275px;
-    border-style: double;
-    border-width: 5px;
-    margin: 5%;
+    width: 300px;
+    height: 300px;
+    border-style:solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: $color1;
 }
 
 .logo{
     width: 250px;
     height: 100%;
+    margin-right: 30px;
 }
 
+/* Estilo para las Cards*/
 .cardWidth{
-    width: 18rem
+    width: 20rem
+}
+
+.cardBody{
+    border-style:solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: $color1;
+    margin: 5%;
+    p{
+        font-size: 20px;
+        text-align:center
+    }
+}
+
+.buy{
+    @include tipografiaBase($roboto, 20px, #000, null);
+    background-color: $color3;
+    color:#000;
+    padding: 10px;
+    border-radius: 5px;
+}
+.buy:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* BotonCuerpo*/
+.botonCuerpo{
+    @include tipografiaBase($roboto, 20px, #000, null);
+    background-color: $color3;
+    padding: 20px;
+    margin-bottom: 5%;
+    border-radius: 5px;
+}
+.botonCuerpo:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pediOnline{
+    @include tipografiaBase($roboto, 30px, #000, null);
+    background-color: $color3;
+    color:#000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.pediOnline:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
 }
